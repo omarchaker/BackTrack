@@ -1,0 +1,215 @@
+@import "../../partials/mixins";
+
+.italic__header {
+	font-family: "Raleway-BlackItalic";
+}
+
+.read__more {
+	margin-bottom: 2em;
+	background-color: #f16d6f00;
+	// font-size: 1.1em;
+	color: black;
+	// padding: 0.5em;
+	// border-radius: 4px;
+	// width: 40%;
+	margin-top: 1em;
+
+	&:hover {
+		color: rgb(68, 68, 68);
+	}
+
+	@include desktop {
+		// width: 30%;
+	}
+
+	@include desktop-large {
+		// width: 20%;
+	}
+}
+
+.gameinfo__add {
+	margin-bottom: 2em;
+	background-color: #c52728;
+	// font-size: 1.1em;
+	color: white;
+	padding: 0.5em;
+	border-radius: 4px;
+	width: 100%;
+	margin-top: 1em;
+	font-size: 1.5em;
+
+	&:hover {
+		background-color: #b6133c;
+	}
+	&:active {
+		background-color: #881431;
+	}
+}
+
+.button__hide {
+	display: none;
+}
+
+.button__text {
+	display: flex;
+	justify-content: center;
+
+	@include desktop {
+		justify-content: start;
+	}
+}
+
+.text__toprow {
+	display: flex;
+}
+
+.gameinfo {
+	display: flex;
+	flex-direction: column;
+	margin: 2em;
+	margin-top: 3em;
+
+	@include desktop {
+		margin: 1em 4em;
+	}
+
+	@include desktop-large {
+		margin: 1em 14em;
+	}
+
+	// align-content: center;
+	&__title {
+		font-family: "Raleway-BlackItalic";
+		font-size: 1.5em;
+		margin: 1em 0;
+		// margin: 1em;
+		@include desktop {
+			margin: 0 0 1em 0;
+			font-size: 2em;
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin: 1em;
+		margin-bottom: 1em;
+
+		@include desktop {
+			background-color: rgba(34, 107, 218, 0.062);
+			border-radius: 4px;
+			flex-direction: row;
+			margin: 3em;
+			padding: 1em;
+			margin-bottom: 1em;
+			align-items: flex-start;
+			// margin-bottom: 10em;
+			// height: 60vw;
+		}
+	}
+
+	&__console {
+		@include tablet {
+			display: flex;
+
+			h3 {
+				margin: 0 0.5em;
+			}
+		}
+	}
+
+	&__genre {
+		margin-top: 1em;
+		color: rgb(83, 83, 83);
+	}
+
+	&__bottomrow {
+		margin-bottom: 2em;
+		margin: 0 2em 2em 0em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	&__numbers {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__playtime {
+		@include desktop {
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include desktop {
+			align-items: flex-start;
+			margin-left: 4em;
+		}
+	}
+
+	// &__summary {
+	// 	width: 90%;
+	// }
+
+	&__imagelist {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: center;
+
+		@include tablet {
+			flex-direction: row;
+
+			justify-content: center;
+		}
+
+		// justify-content: center;
+		// margin: 0.5em;
+	}
+
+	&__coverimage {
+		border-radius: 4px;
+		margin-bottom: 1em;
+	}
+
+	&__images {
+		margin: 1em 0;
+		width: 100%;
+		border-radius: 4px;
+
+		@include tablet {
+			width: 30%;
+			margin: 0.5em;
+		}
+	}
+
+	&__summary {
+		margin: 2em 0;
+		width: 80%;
+		font-size: 1.2em;
+		// height: 10vw;
+		line-height: 1.5em;
+		// margin-bottom: 2em;
+	}
+
+	&__rating {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include desktop {
+			margin-top: 1.5em;
+		}
+	}
+
+	&__score {
+		font-size: 2.5em;
+	}
+}

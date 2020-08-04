@@ -1,0 +1,29 @@
+@import "./partials/fonts";
+@import "./partials/mixins";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.App {
+	font-family: "Raleway";
+	background-color: #ffffff;
+	color: black;
+	margin-top: 0;
+	top: -1rem;
+	// 	background-image: url("./assets/background/bg.svg");
+	// 	background-size: cover;
+	//
+}
+
+body {
+	background-color: #ffffff;
+	margin: 0;
+	top: -1rem;
+}

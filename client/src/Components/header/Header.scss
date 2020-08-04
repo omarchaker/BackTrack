@@ -1,0 +1,165 @@
+@import "../../partials/mixins";
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	border-radius: 50px;
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+input:-webkit-autofill:first-line {
+	color: black;
+}
+
+.header__time {
+	color: white;
+}
+
+.total__time {
+	font-size: 1em;
+}
+.search__button {
+	background-color: rgba(255, 255, 255, 0.884);
+	// font-size: 1.1em;
+	color: white;
+	padding: 0.5em;
+	height: 3em;
+	width: 3em;
+	border-radius: 50px;
+	align-self: center;
+
+	&:hover {
+		background-color: rgba(219, 219, 219, 0.884);
+	}
+
+	&:active {
+		background-color: rgba(143, 143, 143, 0.884);
+	}
+}
+
+.search__form {
+	display: flex;
+	justify-content: space-between;
+}
+.header__container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	// position: fixed;
+
+	color: white;
+	background-color: #000000f1;
+
+	margin-bottom: 0.8em;
+	padding-top: 0;
+	z-index: 10;
+}
+
+.header {
+	display: flex;
+	// margin-top: 1em;
+	width: 75%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1em 0;
+
+	&__logocontainer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0.5em;
+	}
+
+	&__logo {
+		width: 50%;
+		margin-top: 0.5em;
+	}
+
+	@include tablet {
+		flex-direction: row;
+
+		// margin: 1em 6em;
+
+		&__logocontainer {
+			width: 80%;
+		}
+		&__logo {
+			width: 100%;
+		}
+	}
+
+	@include desktop {
+		// margin: 1em 6em;
+
+		&__logocontainer {
+			width: 80%;
+		}
+		&__logo {
+			width: 100%;
+		}
+	}
+
+	@include desktop-large {
+		// margin: 1em 12em;
+
+		&__logocontainer {
+			width: 80%;
+		}
+		&__logo {
+			width: 100%;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		display: flex;
+		margin: 0.5em 2em 1em 2em;
+		border-radius: 50px;
+		background-color: #ffffff;
+		color: rgb(0, 0, 0);
+		justify-content: space-between;
+
+		@include tablet {
+			margin: 1em 2em 1em 2em;
+		}
+	}
+
+	&__search {
+		border: none;
+		border-radius: 18px;
+		// background-color: rgba(255, 255, 255, 0.158);
+		color: rgb(0, 0, 0);
+		padding: 0.75em;
+		padding-left: 1.5em;
+		font-size: 1em;
+		width: 100%;
+		outline: none;
+	}
+
+	&__nav {
+		display: flex;
+
+		width: 100%;
+		// justify-content: center;
+	}
+
+	&__navlist {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+
+		@include desktop {
+			justify-content: flex-end;
+			width: 85%;
+		}
+
+		li {
+			font-family: "Raleway-BlackItalic";
+			font-size: 1.5em;
+		}
+	}
+}
